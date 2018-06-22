@@ -38,34 +38,38 @@ h2{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 2em;
 }
-#Q1 ul li , #Q2 ul li{
+#Q1 > ul li , #Q2 > ul li{
+  text-align: center;
+}
+.Q1Answer , .Q2Answer{
   color: white;
   background-color: grey;
   padding: 1em;
   margin: 1em 0px;
   cursor: pointer;
   text-align: center;
+  display: block;
 }
-#Q1 ul li:hover , #Q2 ul li:hover{
+.Q1Answer:hover , .Q2Answer:hover{
   background-color: #3c3c3c;
 }
 </style>
 <div id="Q1">
   <h2>Who owns the data?</h2>
   <ul>
-    <li class="Q1Answer" data-value="A1">Institutionally owned data</li>
-    <li class="Q1Answer" data-value="B1">Department data</li>
-    <li class="Q1Answer" data-value="C1">Individual user’s UAB data</li>
-    <li class="Q1Answer" data-value="D1">Personal (non-UAB) data</li>
+    <li><a class="Q1Answer" data-value="A1">Institutionally owned data</a>Description</li>
+    <li><a class="Q1Answer" data-value="B1">Department data</a>Description</li>
+    <li><a class="Q1Answer" data-value="C1">Individual user’s UAB data</a>Description</li>
+    <li><a class="Q1Answer" data-value="D1">Personal (non-UAB) data</a>Description</li>
   </ul>
 </div>
 <div id="Q2">
   <h2>What is the data Classification?</h2>
   <ul>
-    <li class="Q2Answer" data-value="W1">Public</li>
-    <li class="Q2Answer" data-value="X1">Sensitive</li>
-    <li class="Q2Answer" data-value="Y1">Restricted</li>
-    <li class="Q2Answer" data-value="Z1">PHI</li>
+    <li><a class="Q2Answer" data-value="W1">Public</a>Description</li>
+    <li><a class="Q2Answer" data-value="X1">Sensitive</a>Description</li>
+    <li><a class="Q2Answer" data-value="Y1">Restricted</a>Description</li>
+    <li><a class="Q2Answer" data-value="Z1">PHI</a>Description</li>
   </ul>
 </div>
 
