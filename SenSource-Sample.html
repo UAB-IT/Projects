@@ -45,17 +45,17 @@
          Caution status if greater than 75 but less than 100
          Full status if equal to 100 */
       if (percent < 75) {
-        container.statusIcon.src = '/it/home/images/icons/icon-check.png';
+        container.statusIcon.src = 'https://www.uab.edu/it/home/images/icons/icon-check.png';
         container.statusIcon.alt = 'Available Space';
         container.statusDescription.innerHTML = 'Enter';
         parent.classList.add('ok-status');
       } else if (percent < 100) {
-        container.statusIcon.src = '/it/home/images/icons/icon-caution.png';
+        container.statusIcon.src = 'https://www.uab.edu/it/home/images/icons/icon-caution.png';
         container.statusIcon.alt = 'Nearing Capacity';
         container.statusDescription.innerHTML = 'Almost Full';
         parent.classList.add('caution-status');
       } else {
-        container.statusIcon.src = '/it/home/images/icons/icon-cancel.png';
+        container.statusIcon.src = 'https://www.uab.edu/it/home/images/icons/icon-cancel.png';
         container.statusIcon.alt = 'At Capacity';
         container.statusDescription.innerHTML = 'Full';
         parent.classList.add('full-status');
@@ -127,12 +127,10 @@ Each building occupancy tracker should have the following HTML
 -------------------------------------------------------------------------->
 
 <div id="2f9cd911" class="occupancy-card">
-  <div class="status">
-    <div>
-      <img class="status-icon" src="/it/home/images/icons/icon-cancel.png" alt="Status Unavailable">
-      <p class="status-description">Status Unavailable</p>
-    </div>
-  </div>
+  <div class="status"><div>
+    <img class="status-icon" src="https://www.uab.edu/it/home/images/icons/icon-cancel.png" alt="Status Unavailable">
+    <p class="status-description">Status Unavailable</p>
+  </div></div>
   <div>
     <h3>Hill Student Center</h3>
     <p style="margin-bottom: 0 !important;"><span class="percent">??</span>% Capacity</p>
