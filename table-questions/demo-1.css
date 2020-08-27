@@ -1,0 +1,47 @@
+body{
+  font-family: sans-serif;
+}
+#Q2{
+  display: none;
+}
+h2{
+  margin-top: 3em;
+  text-align: center;
+}
+.answers div{
+  display: none;
+  width: 75%;
+  margin: auto;
+}
+.answers div h2{
+  text-align: left;
+}
+.show{
+  display: block !important;
+}
+.hide{
+  display: none !important;
+}
+.selected{
+  background-color: green !important;
+}
+#Q1 > ul , #Q2 > ul{
+  list-style: none;
+  padding: 0px;
+  width: 75%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2em;
+}
+#Q1 ul li , #Q2 ul li{
+  color: white;
+  background-color: grey;
+  padding: 1em;
+  margin: 1em 0px;
+  cursor: pointer;
+  text-align: center;
+}
+#Q1 ul li:hover , #Q2 ul li:hover{
+  background-color: #3c3c3c;
+}

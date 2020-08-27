@@ -1,55 +1,15 @@
 <!--I have two questions. Think of this as a table with 4 columns and 3 rows.
 I want to return the content of a cell after asking two questions.
 Think of these as the headers for the rows and columns.-->
-<style>
-body{
-  font-family: sans-serif;
-}
-#Q2{
-  display: none;
-}
-h2{
-  margin-top: 3em;
-  text-align: center;
-}
-.answers div{
-  display: none;
-  width: 75%;
-  margin: auto;
-}
-.answers div h2{
-  text-align: left;
-}
-.show{
-  display: block !important;
-}
-.hide{
-  display: none !important;
-}
-.selected{
-  background-color: green !important;
-}
-#Q1 > ul , #Q2 > ul{
-  list-style: none;
-  padding: 0px;
-  width: 75%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 2em;
-}
-#Q1 ul li , #Q2 ul li{
-  color: white;
-  background-color: grey;
-  padding: 1em;
-  margin: 1em 0px;
-  cursor: pointer;
-  text-align: center;
-}
-#Q1 ul li:hover , #Q2 ul li:hover{
-  background-color: #3c3c3c;
-}
-</style>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Choose Adventure 1</title>
+  <link rel="stylesheet" type="text/css" href="demo-1.css">
+</head>
+<body>
 <div id="Q1">
   <h2>Who owns the data?</h2>
   <ul>
@@ -171,66 +131,6 @@ h2{
   </ul>
 </div>
 </div>
-
-<script>
-  var A = [1, 2, 3, 4]; //These are the cells in the first row
-  var B = [5, 6, 7, 8]; //second row
-  var C = [9, 10, 11, 12]; //third row
-  var D = [13, 14, 15, 16]; //third row
-  var W = 1; // These variables w x y z are to pinpoint the column
-  var X = 2;
-  var Y = 3;
-  var Z = 4;
-  var A1 = "A1";
-  var B1 = "B1";
-  var C1 = "C1";
-  var D1 = "D1";
-  var W1 = "W1";
-  var X1 = "X1";
-  var Y1 = "Y1";
-  var Z1 = "Z1";
-
-  var Q1Answers = document.getElementsByClassName("Q1Answer");
-  var Q2Answers = document.getElementsByClassName("Q2Answer");
-
-  for (var i=0; i < Q1Answers.length; i++) {
-    Q1Answers[i].onclick = function(){
-        var firstAnswer = this.getAttribute("data-value");
-        if (firstAnswer == A1) {
-          firstAnswer = A;
-        } else if (firstAnswer == B1) {
-          firstAnswer = B;
-        } else if (firstAnswer == C1) {
-          firstAnswer = C;
-        } else {
-          firstAnswer = D;
-        }
-        //this.classList.add("selected");
-        var element = document.getElementById("Q1");
-        element.classList.add("hide");
-        var element = document.getElementById("Q2");
-        element.classList.add("show");
-
-        for (var i=0; i < Q2Answers.length; i++) {
-          Q2Answers[i].onclick = function(){
-              var secondAnswer = this.getAttribute("data-value");
-              if (secondAnswer == W1) {
-                secondAnswer = W;
-              } else if (secondAnswer == X1) {
-                secondAnswer = X;
-              } else if (secondAnswer == Y1) {
-                secondAnswer = Y;
-              } else {
-                secondAnswer = Z;
-              };
-              var result = firstAnswer[secondAnswer - 1];
-              //this.classList.add("selected");
-              var element = document.getElementById("Q2");
-              element.classList.add("hide");
-              var element = document.getElementById(result);
-              element.classList.add("show");
-          }
-        };
-    }
-  };
-</script>
+<script src="demo-1.js"></script>
+</body>
+</html>
