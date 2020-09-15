@@ -1,7 +1,6 @@
 # Projects
 Miscellaneous code mini projects<br>
-https://uab-it.github.io/Projects/SenSource-Sample.html<br>
-https://uab-it.github.io/Projects/tableQuestions.html<br>
-https://uab-it.github.io/Projects/tableQuestions2.html<br>
-https://uab-it.github.io/Projects/productcomaparison.html<br>
-https://uab-it.github.io/Projects/getstarted.html
+https://uab-it.github.io/projects/SenSource<br>
+https://uab-it.github.io/projects/table-questions/demo-1.html<br>
+https://uab-it.github.io/projects/table-questions/demo-2.html<br>
+https://uab-it.github.io/projects/get-started
